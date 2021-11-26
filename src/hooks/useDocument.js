@@ -23,6 +23,7 @@ export const useDocument = (collection, id) => {
       }
     );
 
+    // unsubscribe on unmount
     return () => unsubscribe();
   }, [collection, id]);
 
