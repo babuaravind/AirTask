@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.navbar li {
+  font-size: 1.5rem;
+}
+
 .navbar .logo {
   font-weight: bold;
   color: var(--heading-color);
@@ -28,4 +33,8 @@
   color: #333;
   text-decoration: none;
   margin-right: 20px;
+  height: 100%;
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
 }

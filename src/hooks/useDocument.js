@@ -5,11 +5,13 @@ export const useDocument = (collection, id) => {
   const [document, setDocument] = useState(null);
   const [error, setError] = useState(null);
 
+  // realtime document data
   useEffect(() => {
     const ref = firestore_.collection(collection).doc(id);
 
     const unsubscribe = ref.onSnapshot(
       (snapshot) => {
+        // need to make sure the doc exists & has data
         if (snapshot.data()) {
           setDocument({ ...snapshot.data(), id: snapshot.id });
           setError(null);

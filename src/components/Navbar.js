@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import Temple from "../assets/temple.svg";
+import Temple from "../assets/temple.png";
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
@@ -28,7 +28,7 @@ export default function Navbar() {
           <li>
             {!isPending && (
               <button className="btn" onClick={logout}>
-                Logout
+                Sign out
               </button>
             )}
             {isPending && (

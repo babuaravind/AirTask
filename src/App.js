@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       {authIsReady && (
         <BrowserRouter>
-          {user && <Sidebar />}
+          {user && <OnlineUsers />}
           <div className="container">
             <Navbar />
             <Switch>
@@ -43,7 +43,7 @@ function App() {
               </Route>
             </Switch>
           </div>
-          {user && <OnlineUsers />}
+          {user && <Sidebar />}
         </BrowserRouter>
       )}
     </div>

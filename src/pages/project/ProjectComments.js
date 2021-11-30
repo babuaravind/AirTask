@@ -20,6 +20,7 @@ export default function ProjectComments({ project }) {
       createdAt: timestamp_.fromDate(new Date()),
       id: Math.random(),
     };
+    console.log(commentToAdd);
 
     await updateDocument(project.id, {
       comments: [...project.comments, commentToAdd],
@@ -59,6 +60,7 @@ export default function ProjectComments({ project }) {
         <label>
           <span>Add new comment:</span>
           <textarea
+            required
             onChange={(e) => setNewComment(e.target.value)}
             value={newComment}
           ></textarea>
