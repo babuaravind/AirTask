@@ -5,7 +5,7 @@ import { useFirestore } from "../../hooks/useFirestore";
 import Avatar from "../../components/Avatar";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
-export default function ProjectComments({ project }) {
+export default function TaskComments({ project }) {
   const { user } = useAuthContext();
   const { updateDocument, response } = useFirestore("projects");
   const [newComment, setNewComment] = useState("");

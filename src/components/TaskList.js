@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Avatar from "../components/Avatar";
+import Avatar from "./Avatar";
 
-import "./ProjectList.css";
+import "./TaskList.css";
 
-export default function ProjectList({ projects }) {
+export default function TaskList({ projects }) {
   console.log(projects);
 
   return (

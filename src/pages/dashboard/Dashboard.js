@@ -2,8 +2,8 @@ import { useCollection } from "../../hooks/useCollection";
 import { useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
-import ProjectList from "../../components/ProjectList";
-import ProjectFilter from "./ProjectFilter";
+import TaskList from "../../components/TaskList";
+import TaskFilter from "./TaskFilter";
 
 import "./Dashboard.css";
 
@@ -45,8 +45,8 @@ export default function Dashboard() {
     <div>
       <h2 className="page-title">Dashboard</h2>
       {error && <p className="error">{error}</p>}
-      {documents && <ProjectFilter changeFilter={changeFilter} />}
-      {projects && <ProjectList projects={projects} />}
+      {documents && <TaskFilter changeFilter={changeFilter} />}
+      {projects && <TaskList projects={projects} />}
     </div>
   );
 }

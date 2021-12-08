@@ -1,14 +1,14 @@
-import "./Navbar.css";
+import "./Nav.css";
 import Temple from "../assets/temple.png";
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
 
-export default function Navbar() {
+export default function Nav() {
   const { logout, isPending } = useLogout();
   const { user } = useAuthContext();
   return (
-    <div className="navbar">
+    <div className="Nav">
       <ul>
         <li className="logo">
           <img src={Temple} alt="AirTask logo" />

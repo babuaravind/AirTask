@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useDocument } from "../../hooks/useDocument";
 
-import ProjectComments from "./ProjectComments";
-import ProjectSummary from "./ProjectSummary";
+import TaskComments from "./TaskComments";
+import TaskSummary from "./TaskSummary";
 
 import "./Project.css";
 
@@ -19,8 +19,8 @@ export default function Project() {
 
   return (
     <div className="project-details">
-      <ProjectSummary project={document} />
-      <ProjectComments project={document} />
+      <TaskSummary project={document} />
+      <TaskComments project={document} />
     </div>
   );
 }

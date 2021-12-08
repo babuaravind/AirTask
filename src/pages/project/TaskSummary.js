@@ -3,7 +3,7 @@ import { useFirestore } from "../../hooks/useFirestore";
 import { useHistory } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
-export default function ProjectSummary({ project }) {
+export default function TaskSummary({ project }) {
   const { deleteDocument } = useFirestore("projects");
   const { user } = useAuthContext();
   const history = useHistory();

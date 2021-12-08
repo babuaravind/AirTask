@@ -9,7 +9,7 @@ const filterList = [
   "general",
 ];
 
-export default function ProjectFilter({ changeFilter }) {
+export default function TaskFilter({ changeFilter }) {
   const [currentFilter, setCurrentFilter] = useState("all");
 
   const handleClick = (newFilter) => {

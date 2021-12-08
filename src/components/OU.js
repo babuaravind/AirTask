@@ -1,8 +1,8 @@
 import { useCollection } from "../hooks/useCollection";
 import Avatar from "./Avatar";
-import "./OnlineUsers.css";
+import "./OU.css";
 
-export default function OnlineUsers() {
+export default function OU() {
   const { documents, error } = useCollection("users");
   return (
     <div className="user-list">

@@ -7,9 +7,9 @@ import Create from "./pages/create/Create";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import Project from "./pages/project/Project";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
-import OnlineUsers from "./components/OnlineUsers";
+import OU from "./components/OU";
 
 function App() {
   const { user, authIsReady } = useAuthContext();
@@ -17,9 +17,9 @@ function App() {
     <div className="App">
       {authIsReady && (
         <BrowserRouter>
-          {user && <OnlineUsers />}
+          {user && <OU />}
           <div className="container">
-            <Navbar />
+            <Nav />
             <Switch>
               <Route exact path="/">
                 {!user && <Redirect to="/login" />}
